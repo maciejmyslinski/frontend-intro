@@ -44,7 +44,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: "./node_modules/reveal.js/", to: "reveal.js/" }
     ]),
-    new CleanWebpackPlugin("dist"),
+    new CleanWebpackPlugin("dist/*"),
     new HtmlWebpackPlugin({
       title: "What the frontend",
       template: "src/index.html"
