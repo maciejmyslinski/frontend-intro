@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import { injectGlobal } from "styled-components";
 import "reveal.js/css/reveal.css";
+import './fonts/fonts.scss';
 import "./css/theme/netguru.scss";
 
 injectGlobal`
