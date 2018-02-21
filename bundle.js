@@ -1558,43 +1558,8 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var Logo = _styledComponents2.default.img(_templateObject2);
 
-var Counter = function (_Component) {
-  _inherits(Counter, _Component);
-
-  function Counter() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, Counter);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Counter.__proto__ || Object.getPrototypeOf(Counter)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      disabled: false
-    }, _this.handleClick = function () {
-      return _this.setState({ disabled: true });
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
-
-  _createClass(Counter, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "button",
-        { onClick: this.handleClick, disabled: this.state.disabled },
-        "hello"
-      );
-    }
-  }]);
-
-  return Counter;
-}(_react.Component);
-
-var App = function (_Component2) {
-  _inherits(App, _Component2);
+var App = function (_Component) {
+  _inherits(App, _Component);
 
   function App() {
     _classCallCheck(this, App);
@@ -1651,13 +1616,261 @@ var App = function (_Component2) {
             _react2.default.createElement(
               "h1",
               null,
-              "What the Front-end"
+              "What the Front-end \uD83E\uDD14"
+            ),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              _react2.default.createElement(
+                "p",
+                null,
+                "Kto robi\u0142 kiedykolwiek cokolwiek zwi\u0105zanego z frontend developmentem?"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "Powiem wam o frontend developmencie wszystko, co 5 lat temu chcia\u0142bym, \u017Ceby kto\u015B powiedzia\u0142 mi."
+              )
             )
           ),
           _react2.default.createElement(
             "section",
             null,
-            "Slide 2"
+            _react2.default.createElement(
+              "h2",
+              null,
+              "Frontend \u26A1\uFE0F Backend"
+            ),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              "front to wszystko, z czym u\u017Cytkownik wchodzi w bezpo\u015Bredni\u0105 interakcj\u0119"
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            _react2.default.createElement(
+              "h2",
+              null,
+              "Why Frontend is hard \uD83E\uDD2F"
+            ),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "R\xF3\u017Cnice pomi\u0119dzy przegl\u0105darkami (",
+                  _react2.default.createElement(
+                    "a",
+                    {
+                      href: "https://caniuse.com",
+                      taget: "_blank"
+                    },
+                    "canIuse"
+                  ),
+                  ")"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  " szybko ewoluuje - wydawanie ksi\u0105\u017Cek"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "stare przegl\u0105darki wci\u0105\u017C w u\u017Cyciu, stare strony Internetowe"
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            _react2.default.createElement("img", { src: "http://ww3.sinaimg.cn/large/7f184da9jw1ezcb2r8fkyj20o00b40u2.jpg" }),
+            _react2.default.createElement(
+              "h3",
+              { className: "fragment" },
+              "Jeff Atwood"
+            ),
+            _react2.default.createElement(
+              "blockquote",
+              { className: "fragment" },
+              "\u201EAny application that can be written in JavaScript, will eventually be written in JavaScript.\u201D"
+            ),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              "kt\xF3remu zawdzi\u0119czamy Stack Overflow"
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            _react2.default.createElement("img", { src: "https://10clouds.com/wp-content/uploads/2017/06/javascript-everywhere.jpg" }),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "strony i aplikacje internetowe"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "aplikacje mobilne"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "PWA"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "aplikacje desktopowe (electron)"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "serwery (node.js)"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "gry ",
+                  _react2.default.createElement(
+                    "a",
+                    { href: "https://phaser.io/" },
+                    "phaser"
+                  )
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "grafika 3d (three.js)"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  null,
+                  "IoT, drony"
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            _react2.default.createElement(
+              "h1",
+              null,
+              "HTML \uD83D\uDCDD"
+            ),
+            _react2.default.createElement(
+              "small",
+              null,
+              "HyperText Markup Language"
+            ),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              _react2.default.createElement(
+                "p",
+                null,
+                "p, image, input, label, select, button"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "j\u0119zyki komplilowane do html (haml, slim, erb)"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            _react2.default.createElement(
+              "h1",
+              null,
+              "CSS \uD83D\uDC85"
+            ),
+            _react2.default.createElement(
+              "small",
+              null,
+              "Cascading Style Sheets"
+            ),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              _react2.default.createElement(
+                "p",
+                null,
+                "sass, less"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            _react2.default.createElement(
+              "h1",
+              null,
+              "JS \uD83D\uDE31"
+            ),
+            _react2.default.createElement(
+              "small",
+              null,
+              "JavaScript"
+            ),
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              _react2.default.createElement(
+                "p",
+                null,
+                "Powsta\u0142 w 10 dni"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "Na pocz\u0105tku by\u0142 zabawk\u0105"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "ES6"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "typescript"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "jQuery"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "section",
+            null,
+            "Q",
+            "&",
+            "A",
+            _react2.default.createElement(
+              "aside",
+              { className: "notes" },
+              "abc"
+            )
           )
         )
       );
