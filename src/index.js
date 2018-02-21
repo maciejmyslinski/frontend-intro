@@ -13,6 +13,7 @@ injectGlobal`
 class App extends Component {
   componentDidMount() {
     Reveal.initialize({
+      controls: false,
       dependencies: [
         {
           src: "reveal.js/plugin/markdown/marked.js",
