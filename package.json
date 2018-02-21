@@ -1,0 +1,7 @@
+{
+  "name": "introduction-to-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Maciej Myśliński <maciej.myslinski@netguru.pl>",
+  "license": "MIT"
+}
