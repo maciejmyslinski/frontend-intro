@@ -1,15 +1,43 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { injectGlobal } from "styled-components";
+import styled, { injectGlobal } from "styled-components";
+import ngLogo from "./img/netguru-logo-full.svg";
 import "reveal.js/css/reveal.css";
-import './fonts/fonts.scss';
+import "./fonts/fonts.scss";
 import "./css/theme/netguru.scss";
 
 injectGlobal`
   #root {
     height: 100vh;
+    position: relative;
   }
 `;
+
+const Logo = styled.img`
+  && {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    margin: 20px;
+  }
+`;
+
+class Counter extends Component {
+  state = {
+    disabled: false
+  };
+
+  handleClick = () => this.setState({ disabled: true });
+
+  render() {
+    return (
+      <button onClick={this.handleClick} disabled={this.state.disabled}>
+        hello
+      </button>
+    );
+  }
+}
 
 class App extends Component {
   componentDidMount() {
@@ -50,8 +78,11 @@ class App extends Component {
   render() {
     return (
       <div className="reveal">
+        <Logo src={ngLogo} />
         <div className="slides">
-          <section>hello!</section>
+          <section>
+            <h1>What the Front-end</h1>
+          </section>
           <section>Slide 2</section>
         </div>
       </div>
