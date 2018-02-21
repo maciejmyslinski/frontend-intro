@@ -1,4 +1,7 @@
 const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -36,5 +39,15 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: "./node_modules/reveal.js/", to: "reveal.js/" }
+    ]),
+    new CleanWebpackPlugin("dist"),
+    new HtmlWebpackPlugin({
+      title: "What the frontend",
+      template: "src/index.html"
+    })
+  ]
 };
