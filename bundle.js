@@ -1464,6 +1464,7 @@ var App = function (_Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       Reveal.initialize({
+        controls: false,
         dependencies: [{
           src: "reveal.js/plugin/markdown/marked.js",
           condition: function condition() {
