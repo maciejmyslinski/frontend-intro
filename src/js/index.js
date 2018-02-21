@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import { injectGlobal } from 'styled-components';
 import "reveal.js/css/reveal.css";
-import "reveal.js/css/theme/solarized.css";
+import "../css/theme/netguru.scss";
 
 injectGlobal`
   #root {
